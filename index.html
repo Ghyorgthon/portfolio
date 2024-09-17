@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <title>Portfólio | Ghyorgthon André</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <a href="#">
+                    <p class="nav-name">Ghyorgthon</p>
+                </a>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav-menu-list">
+                    <li class="nav-list">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#about" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#projetos" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Download CV <i class="fa-regular fa-file"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <!-- Home -->
+
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                       <span>Olá, me chamo Ghyorgthon André!</span>   
+                    </div>
+                    <div class="featured-name">
+                        <p>Eu sou <span class="typedText">Desenvolvedor Web.</span></p>
+                    </div>
+                    <div class="featured-text-info"><p>criando interfaces web atraentes e funcionais, transformando designs em experiências interativas.</p></div>
+
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Sobre mim</button>
+                        <button class="btn ">Download CV</button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/gh.andre_/">
+                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                        </a>
+                        <a href="https://github.com/Ghyorgthon">
+                            <div class="icon"><i class="fa-brands fa-github"></i></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ghyorgthon-andre/">
+                            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="featured-img">
+                    <div class="img">
+                        <img src="assets/images/Eu.png" alt="">
+                    </div>
+                </div>
+                <div class="scroll-icon">
+                    <a href="#about" class="scroll-btn">
+                        <i class="fa-solid fa-computer-mouse"></i>
+                        <p>role pra baixo</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sobre Mim-->
+
+             <section class="section" id="about">
+                <div class="top-header">
+                    <h1>Sobre mim</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="sobre-info">
+                            <h3>my introduction</h3> 
+                            <p>Bem-vindo(a)s ao meu portifólio,  vamos para um breve apresentação minha, eu me chamo Ghyorgthon André, tenho  anos. Ao longo dos últimos meses, mergulhei em estudos intensivos, aprendendo as linguagens e conceitos fundamentais do desenvolvimento web. Adquiri conhecimento em HTML, CSS e JavaScript, além de outras tecnologias. Embora eu ainda não tenha experiência profissional como desenvolvedor web, trabalhei em projetos pessoais  significativos para solidificar minhas habilidades.</p>  
+                        </div>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="skill-box">
+                            <div class="skills-header"><h3>Frontend</h3></div>
+                            <div class="skills-list">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skills-header"><h3>Backend</h3></div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <div class="skills-header"><h3>Banco de dados</h3></div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             </section>
+
+            <!-- Projetos-->
+
+             <section class="section" id="projetos">
+                <div class="top-header">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao1.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 1</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao2.webp" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 2</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao3.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 3</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao4.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 4</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao1.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 5</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay">
+                                    </span>
+                                    <div class="card-image">
+                                        <img src="assets/images/programacao3.jpg" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name-project">Projeto 6</h2>
+                                    <p class="description-project">descrição breve</p>
+                                    <button class="btn">Mais detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                </div>
+             </section>
+
+             <!--Contato -->
+
+             <section class="section" id="contato">
+                <div class="top-header">
+                    <h1>Entre em contato</h1>
+                    <span>Se você tem um projeto em mente, entre em contato comigo!</span>
+                </div>
+                <div class="row">
+                    <div class="contact-info">
+                        <h2>Me encontre <i class="fa-solid fa-arrow-down"></i></h2>
+                        <p><i class="fa-solid fa-envelope"></i> Email: ghyorgthon.and@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> Telefone: +55 (87) 9 9627-2935</p>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Seu nome">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Mensagem"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Enviar<i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            
+
+        </main>
+
+        <!--------------- Rodapé ------------>
+
+        <footer>
+            <div class="top-footer">
+                <p>Ghyorgthon André</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer-menu-list"><a href="#home">Home</a></li>
+                    <li class="footer-menu-list"><a href="#sobre">Sobre</a></li>
+                    <li class="footer-menu-list"><a href="#projetos">Projetos</a></li>
+                    <li class="footer-menu-list"><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                <div class="icon"><i class="fa-brands fa-github"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Ghyorgthon André</a> - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

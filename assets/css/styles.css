@@ -456,8 +456,15 @@ h3{
 .overlay::after{
     border-radius: 0px 25px 0 0px;
     background-color: var(--color-white);
+    z-index: 1;
 
 }
+
+.card-content .description-project{
+    z-index: 1000;
+    position: relative;
+}
+
 
 /*-----------------Area de Contato-----------------*/
 

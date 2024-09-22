@@ -291,8 +291,14 @@ i{
 
 .col{
     display: flex;
-    width: 50%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
+}
+.col h3{
+    text-align: center;
 }
 
 
@@ -320,15 +326,26 @@ h3{
     position: relative;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
+    justify-content: center;
     padding-block: 30px 70px;
     padding-inline: 20px;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
 }
 
+.skills{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
 .skill-box{
-    margin: 40px;
+    margin-top: auto;
+    text-align: center;
+    margin: auto;
 
 }
 .skills-header{
@@ -336,19 +353,22 @@ h3{
 }
 .skills-list{
     display: flex;
-
-    flex-direction: column;
+    text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 5px;
     text-align: center;
+    margin: auto;
+    
 }
 
 .skills-list span{
-
-    font-size: 14px;
+    margin-left: 0px;
+    font-size: 16px;
     background: var(--text-color-third);
     color: var(--color-white);
-    padding: 2px 10px;
+    padding: 5px 15px;
+    width: 133px;
     border-radius: 5px;
 }
 
@@ -618,6 +638,10 @@ footer{
 
 /*Responsividade*/
 
+
+
+
+
 @media only screen and (max-width:1024px){
     .featured-text{
         margin: 0;
@@ -715,7 +739,8 @@ footer{
     margin: 10px;
     }
     .skills-list{
-        flex-direction: column;
+        text-align: center;
+        justify-content: center;
     }
 
     .row{
@@ -781,6 +806,13 @@ footer{
 
 }
 
+@media only screen and (max-width:420px){
+    .skills-list span{
+        width: 120px;
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width:330px){
     
     .featured-name{
@@ -813,7 +845,12 @@ footer{
     }
     .skill-box{
         display: flex;
+       
         flex-direction: row;
+    }
+    .skills-list span{
+        width: 110px;
+        font-size: 10px;
     }
 }
 

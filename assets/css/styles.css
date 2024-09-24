@@ -562,6 +562,7 @@ h3{
     display: flex;
     gap: 10px;
     width: 100%;
+    
 }
 
 .input-field{
@@ -572,6 +573,7 @@ h3{
     padding-inline: 20px;
     border-radius: 10px;
     outline: none;
+    margin-bottom: 10px;
 }
 textarea{
     width: 100%;
@@ -590,6 +592,7 @@ textarea{
     justify-content: center;
     background: var(--text-color-third);
     color: var(--color-white);
+    outline: none;
 }
 .form-button .btn:hover{
     background: rgb(20, 136, 146) ;

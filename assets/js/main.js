@@ -106,3 +106,50 @@ var swiper = new Swiper(".slide-content", {
   
   srRight.reveal('.skill-box',{delay: 100})
   srRight.reveal('.form-control',{delay: 100})
+
+
+
+
+  /** Enviar email **/
+  const form = document.querySelector('form')
+
+  const nome = document.getElementById('nome')
+  const email = document.getElementById('email')
+  const msg = document.getElementById('msg')
+
+  function sendEmail(){
+
+    const bodyMessage = `Nome: ${nome.value} <br> Email: ${email.value} <br> Mensagem: ${msg.value}`
+
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "ghyorgthon.and@gmail.com",
+      Password : "96A1AEB19D5EA146F8C2E0366B10A3C4F218",
+      To : 'ghyorgthon.and@gmail.com',
+      From : 'ghyorgthon.and@gmail.com',
+      Subject : "Novo Contato pelo formulário do portfólio",
+      Body : bodyMessage
+  }).then(
+    message => {
+      if (message == "OK"){
+        Swal.fire({
+          title: "Sucesso!",
+          text: "Email enviado!",
+          icon: "success"
+        });
+      }else{
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Algo deu errado, tente novamente."
+        });
+      }
+    }
+  );
+
+  form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+
+    sendEmail()
+  })
+  }

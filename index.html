@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <script src="assets/js/swiper-bundle.min.js"></script>
+
     <title>Portfólio | Ghyorgthon André</title>
 </head>
 <body>
@@ -245,20 +246,22 @@
                     <div class="contact-info">
                         <h2>Me encontre <i class="fa-solid fa-arrow-down"></i></h2>
                         <p><i class="fa-solid fa-envelope"></i> Email: ghyorgthon.and@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i> Telefone: +55 (87) 9 9627-2935</p>
+                        <p><i class="fa-brands fa-whatsapp"></i> Telefone: +55 (87) 9 9627-2935</p>
                     </div>
                     <div class="col">
                         <div class="form-control">
-                            <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Seu nome">
-                                <input type="text" class="input-field" placeholder="Email">
-                            </div>
-                            <div class="text-area">
-                                <textarea placeholder="Mensagem"></textarea>
-                            </div>
-                            <div class="form-button">
-                                <button class="btn">Enviar<i class="fa-regular fa-paper-plane"></i></button>
-                            </div>
+                                <form onsubmit="sendEmail(); reset(); return false">
+                                    <div class="form-inputs">
+                                        <input type="text" id="nome" class="input-field" placeholder="Seu nome" required>
+                                        <input type="email" id="email" class="input-field" placeholder="Email" required>
+                                    </div>
+                                    <div class="text-area">
+                                        <textarea id="msg" placeholder="Mensagem" required></textarea>
+                                    </div>
+                                    <div class="form-button">
+                                        <button type="submit" class="btn">Enviar<i class="fa-regular fa-paper-plane"></i></button>
+                                    </div>
+                                </form>
                         </div>
                     </div>
                 </div>
@@ -296,6 +299,8 @@
 
 
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

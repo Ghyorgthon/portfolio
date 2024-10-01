@@ -630,6 +630,7 @@ footer{
 .footer-social-icons{
     display: flex;
     gap: 30px;
+    color: #777; 
 }
 .bottom-footer{
     font-size: 14px;
